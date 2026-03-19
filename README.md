@@ -1,7 +1,4 @@
-![Tests](https://github.com/designcomputer/mysql_mcp_server/actions/workflows/test.yml/badge.svg)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/mysql-mcp-server)
-[![smithery badge](https://smithery.ai/badge/mysql-mcp-server)](https://smithery.ai/server/mysql-mcp-server)
-[![MseeP.ai Security Assessment Badge](https://mseep.net/mseep-audited.png)](https://mseep.ai/app/designcomputer-mysql-mcp-server)
+
 # MySQL MCP Server
 A Model Context Protocol (MCP) implementation that enables secure interaction with MySQL databases. This server component facilitates communication between AI applications (hosts/clients) and MySQL databases, making database exploration and analysis safer and more structured through a controlled interface.
 
@@ -14,17 +11,6 @@ A Model Context Protocol (MCP) implementation that enables secure interaction wi
 - Secure database access through environment variables
 - Comprehensive logging
 
-## Installation
-### Manual Installation
-```bash
-pip install mysql-mcp-server
-```
-
-### Installing via Smithery
-To install MySQL MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/mysql-mcp-server):
-```bash
-npx -y @smithery/cli install mysql-mcp-server --client claude
-```
 
 ## Configuration
 Set the following environment variables:
@@ -104,7 +90,7 @@ The MySQL MCP Server is designed to be integrated with AI applications like Clau
 ## Development
 ```bash
 # Clone the repository
-git clone https://github.com/designcomputer/mysql_mcp_server.git
+git clone https://github.com/DaoLiLong/bridge_mysql_mcp_server.git
 cd mysql_mcp_server
 # Create virtual environment
 python -m venv venv
@@ -128,21 +114,3 @@ This MCP implementation requires database access to function. For security:
 3. **Restrict database access** to only necessary operations
 4. **Enable logging** for audit purposes
 5. **Regular security reviews** of database access
-
-See [MySQL Security Configuration Guide](https://github.com/designcomputer/mysql_mcp_server/blob/main/SECURITY.md) for detailed instructions on:
-- Creating a restricted MySQL user
-- Setting appropriate permissions
-- Monitoring database access
-- Security best practices
-
-⚠️ IMPORTANT: Always follow the principle of least privilege when configuring database access.
-
-## License
-MIT License - see LICENSE file for details.
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
