@@ -102,18 +102,18 @@ pytest
 ```
 
 ## windows版
-# 创建虚拟环境目录
+### 创建虚拟环境目录
 python -m venv .venv
 
-# 使用当前项目下 .venv 虚拟环境中的 pip 工具，从阿里云的镜像源下载并安装 requirements.txt 文件中列出的所有依赖包。
+### 使用当前项目下 .venv 虚拟环境中的 pip 工具，从阿里云的镜像源下载并安装 requirements.txt 文件中列出的所有依赖包。
 .\.venv\Scripts\pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 
 
 ## mac版
-# 创建虚拟环境目录
+### 创建虚拟环境目录
 python -m venv .venv
 
-# 激活当前目录下的 Python 虚拟环境
+### 激活当前目录下的 Python 虚拟环境
 source .venv/bin/activate  
 
 # 使用当前项目下 .venv 虚拟环境中的 pip 工具，从阿里云的镜像源下载并安装 requirements.txt 文件中列出的所有依赖包。
@@ -121,14 +121,14 @@ source .venv/bin/activate
 
 
 ## 创建MCP MySQL连接
-# 命令 windows版	
+### 命令 windows版	
 BridgeMysqlMcpServer的python项目地址\.venv\Scripts\python.exe
-# 命令 mac版	
+### 命令 mac版	
 BridgeMysqlMcpServer的python项目地址/.venv/bin/python
 
-# 参数 windows版	
+### 参数 windows版	
 BridgeMysqlMcpServer的python项目地址\src\mysql_mcp_server\server.py --transport stdio
-# 参数 mac版	
+### 参数 mac版	
 BridgeMysqlMcpServer的python项目地址/server.py --transport stdio
 
 
